@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #indicator_container {
+            top: 180px;
+            left: 29px;
+            width: 318px;
+            height: 339px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            border: 5px solid #b1ee2f;
+            -ms-box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.25);
+            -o-box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.25);
+            background: rgba(240, 240, 240, 1);
+        }
+
+        #frame_1 {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 20px;
+            gap: 24px;
+        }
+
+        #frame_2 {
+            display: flex;
+            height: 64px;
+            align-items: center;
+            gap: 40px;
+        }
+
+
+        #indicator_heading {
+            top: -7px;
+            left: 0px;
+            width: 154px;
+            height: 87px;
+            font-family: League Spartan;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 38.999998569489px;
+            letter-spacing: 2.1px;
+            color: #FF3257;
+        }
+
+        #vector {
+            top: 16px;
+            left: 176px;
+            width: 59px;
+            height: 42px;
+        }
+
+        #frame_3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        #frame_4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 27px;
+        }
+
+        #indicator_option {
+            top: 0.5px;
+            left: 54px;
+            width: 211px;
+            height: 32px;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 25.999999046326px;
+            letter-spacing: 1.5px;
+            color: #000000;
+        }
+
+        #circles {
+            top: 0px;
+            left: 0px;
+            width: 27px;
+            height: 27px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="indicator_container">
+        <div id="frame_1">
+            <div id="frame_2">
+                <div id="indicator_heading"> Pick Map<br />Indicators </div>
+                <img src="maps.png" id="vector">
+            </div>
+            <div id="frame_3">
+                <div id="frame_4">
+                    <img src="empty_circle.png" id="circles">
+                    <div id="indicator_option"> Total Stock Carbon </div>
+                </div>
+                <div id="frame_4">
+                    <img src="filled_circle.png" id="circles">
+                    <div id="indicator_option"> Total Stock Carbon </div>
+                </div>
+                <div id="frame_4">
+                    <img src="empty_circle.png" id="circles">
+                    <div id="indicator_option"> Total Stock Carbon </div>
+                </div>
+                <div id="frame_4">
+                    <img src="empty_circle.png" id="circles">
+                    <div id="indicator_option"> Total Stock Carbon </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
