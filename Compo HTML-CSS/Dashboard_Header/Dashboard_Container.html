@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #frame_main {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+
+        #dashboard_container {
+            position: relative;
+            border-radius: 25px;
+            border: 7px solid #adff00;
+            box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.25);
+            background: rgba(241, 241, 241, 1);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            flex: 1; /* Set flex property to 1 for equal distribution */
+        }
+
+        #frame_2 {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #dashboard_icon {
+            width: 60px;
+            height: 60px;
+            background: url('process.png') no-repeat center center;
+            background-size: contain;
+            margin: 20px;
+            
+        }
+
+        #dashboard_title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: middle;
+            line-height: 52px;
+            letter-spacing: 2.3px;
+            color: #000000;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="frame_main">
+        <div id="dashboard_container">
+            <div id="frame_2">
+                <div id="dashboard_icon"></div>
+                <div id="dashboard_title">
+                    Dashboard Mangrove for Ecosystem
+                </div>
+            </div>
+        </div>
+</body>
+</html>
