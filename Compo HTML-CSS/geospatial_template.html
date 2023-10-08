@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earth Engine Map</title>
+    <!-- Include Leaflet or other mapping library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="height: 500px;"></div>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([0, 0], 2);
+
+        // Add a base layer (e.g., OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add the Earth Engine image as an overlay
+        var imageUrl = "{{ download_link }}";
+        L.imageOverlay(imageUrl, [[-80, -180], [80, 180]]).addTo(map);
+    </script>
+    {% if download_link %}
+        <a href="{{ download_link }}" target="_blank">Download Result</a>
+    {% endif %}
+</body>
+</html>
